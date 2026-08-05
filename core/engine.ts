@@ -67,7 +67,18 @@ export class CoreEngine {
 
       // Listen for system/polling errors
       this.bot.on("polling_error", (err: any) => {
-        this.log("error", `Polling Error: ${err.message || err}`, err);
+        const errMsg = err.message || String(err);
+        this.log("error", `Polling Error: ${errMsg}`, err);
+
+        // If it's a 401 Unauthorized error, stop polling and exit to prevent infinite spam
+        if (errMsg.includes("401") || errMsg.includes("Unauthorized")) {
+          this.log("error", `[CRITICAL_AUTH] Invalid Telegram Bot Token (401 Unauthorized). The token has been rejected or revoked. Stopping polling and halting process to prevent server/database logs spam.`);
+          this.stop().then(() => {
+            process.exit(0); // Exit with code 0 to prevent auto-restart loop
+          }).catch(() => {
+            process.exit(0);
+          });
+        }
       });
 
       this.bot.on("error", (err: any) => {
