@@ -8,7 +8,8 @@ import {
   Settings, 
   Activity,
   Menu,
-  X
+  X,
+  User
 } from "lucide-react";
 
 interface SidebarProps {
@@ -28,6 +29,7 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen }: 
     { id: "modules", label: "Modules Manager", icon: Layers },
     { id: "monitor", label: "System Monitor", icon: Activity },
     { id: "settings", label: "Settings", icon: Settings },
+    { id: "aboutme", label: "About Me", icon: User },
   ];
 
   return (
@@ -64,7 +66,7 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen }: 
             </div>
             <div>
               <h1 className="text-base font-semibold tracking-wide text-white font-mono uppercase bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                Termux Bot Panel
+                NellsPanels
               </h1>
               <p className="text-[10px] text-cyan-400 font-mono tracking-wider font-semibold">
                 DAEMON CORE v1.0.0

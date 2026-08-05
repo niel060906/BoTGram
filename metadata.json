@@ -1,6 +1,6 @@
 {
-  "name": "Telegram Bot Panel",
-  "description": "Multi-process control panel daemon to run, configure, and monitor many Telegram Bots from one central system on Termux and Node.js.",
+  "name": "NellsPanels",
+  "description": "Premium multi-process control panel daemon to run, configure, and monitor your Telegram Bots from one central system on Termux and Node.js.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -13,6 +13,7 @@ import DashboardHome from "./components/DashboardHome";
 import BotsList from "./components/BotsList";
 import ConsoleView from "./components/ConsoleView";
 import FileManager from "./components/FileManager";
+import AboutMe from "./components/AboutMe";
 import { 
   AlertCircle, 
   CheckCircle2, 
@@ -854,6 +855,11 @@ export default function App() {
                   </div>
                 </div>
               </div>
+            )}
+
+            {/* About Me tab */}
+            {activeTab === "aboutme" && (
+              <AboutMe />
             )}
 
           </div>

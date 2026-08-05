@@ -78,13 +78,13 @@ export default function DashboardHome({ bots, stats, moduleCount, setActiveTab }
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider font-bold uppercase">
             <Zap size={14} className="animate-pulse" />
-            TERMUX CORE DAEMON ONLINE
+            NELLSPANELS CORE DAEMON ONLINE
           </div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-            Telegram Bot Management Panel
+            NellsPanels Management Suite
           </h2>
           <p className="text-slate-400 text-sm max-w-xl leading-relaxed">
-            Welcome back! Monitor and manage your Telegram bots isolated processes on our optimized core network. update modules globally with a single click.
+            Welcome back! Monitor and manage your Telegram bots' isolated processes on our optimized core network with NellsPanels. Update modules globally with a single click.
           </p>
         </div>
 

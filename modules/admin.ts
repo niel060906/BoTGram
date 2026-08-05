@@ -72,7 +72,7 @@ const adminModule: BotModule = {
 
       const welcomeMsg = 
         `👋 *Hello, ${firstName}!* \n\n` +
-        `Welcome to this Telegram Bot, powered by the central *Termux Bot Management Panel Core Engine*! ⚡\n\n` +
+        `Welcome to this Telegram Bot, powered by the central *NellsPanels Core Engine*! ⚡\n\n` +
         `This bot is fully running on an isolated process. You can control this bot using the *Reply Keyboard* below or tap the *Inline Buttons* on this message.`;
 
       const replyMarkup = {
